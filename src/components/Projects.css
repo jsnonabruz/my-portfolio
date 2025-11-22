@@ -1,0 +1,15 @@
+.projects-section {
+  padding: 60px;
+}
+
+.project-list {
+  display: flex;
+  gap: 20px;
+}
+
+.project-card {
+  padding: 20px;
+  background: #eee;
+  border-radius: 8px;
+  width: 200px;
+}
