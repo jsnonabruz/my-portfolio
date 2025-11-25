@@ -1,19 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 
 function Navbar() {
+  const [open, setOpen] = useState(false);
+
   return (
     <nav className="navbar">
-      <h2 className="logo">MyPortfolio</h2>
+      <div className="nav-logo">MyPortfolio</div>
 
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <div className={`nav-links ${open ? "open" : ""}`}>
+        <a href="#home" onClick={() => setOpen(false)}>Home</a>
+        <a href="#about" onClick={() => setOpen(false)}>About</a>
+        <a href="#skills" onClick={() => setOpen(false)}>Skills</a>
+        <a href="#projects" onClick={() => setOpen(false)}>Projects</a>
+        <a href="#contact" onClick={() => setOpen(false)}>Contact</a>
+      </div>
+
+      <div className="hamburger" onClick={() => setOpen(!open)}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
   );
 }
 
 export default Navbar;
+

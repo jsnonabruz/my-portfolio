@@ -1,21 +1,20 @@
 import React from "react";
 import "./Projects.css";
+import proj from "../assets/proj.png";
 
 function Projects() {
   return (
     <section id="projects" className="projects-section">
       <h2>Projects</h2>
 
-      <div className="project-list">
-        <div className="project-card">
-          <h3>Project 1</h3>
-          <p>A cool project description goes here.</p>
-        </div>
+      <div className="projects-container">
 
         <div className="project-card">
-          <h3>Project 2</h3>
-          <p>Another awesome project.</p>
+          <img src={proj} alt="Project" className="project-img"/>
+          <h3>My Project</h3>
+          <p>My E-Commerce</p>
         </div>
+
       </div>
     </section>
   );
