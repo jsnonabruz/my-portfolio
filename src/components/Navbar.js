@@ -6,7 +6,7 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="nav-logo">MyPortfolio</div>
+      <div className="nav-logo">Jsn.</div>
 
       <div className={`nav-links ${open ? "open" : ""}`}>
         <a href="#home" onClick={() => setOpen(false)}>Home</a>
